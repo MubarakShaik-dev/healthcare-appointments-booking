@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Dr. Mubarak Shaik",
+    "specialty": "Cardiology",
+    "experience": 12,
+    "rating": 4.8,
+    "profileImage": "/images/doctor1.jpg",
+    "availableSlots": ["09:00","10:00","11:00","14:00","15:00","16:00"],
+    "consultationFee": 150,
+    "location": "Mumbai, Maharashtra",
+    "bio": "Specialist in cardiovascular diseases with 12 years of experience."
+  },
+  {
+    "name": "Dr. Misbah Kousar",
+    "specialty": "Neurology",
+    "experience": 15,
+    "rating": 4.9,
+    "profileImage": "/images/doctor2.jpg",
+    "availableSlots": ["08:00","09:30","11:00","13:30","15:00","16:30"],
+    "consultationFee": 200,
+    "location": "Delhi, Delhi",
+    "bio": "Leading neurologist specialising in brain and spine disorders."
+  },
+  { "name":"Dr. Priya Sharma","specialty":"Dermatology","experience":8,"rating":4.7,"profileImage":"/images/doctor3.jpg","availableSlots":["09:00","10:30","12:00","14:30","16:00","17:00"],"consultationFee":120,"location":"Bangalore, Karnataka","bio":"Dermatologist with expertise in skin care and cosmetic procedures." },
+  { "name":"Dr. Amit Patel","specialty":"Orthopedics","experience":10,"rating":4.6,"profileImage":"/images/doctor4.jpg","availableSlots":["08:30","10:00","11:30","14:00","15:30","17:00"],"consultationFee":180,"location":"Ahmedabad, Gujarat","bio":"Orthopedic surgeon specialising in joint replacement." },
+  { "name":"Dr. Meera Singh","specialty":"Pediatrics","experience":14,"rating":4.9,"profileImage":"/images/doctor5.jpg","availableSlots":["09:00","10:30","12:00","14:00","15:30","16:30"],"consultationFee":100,"location":"Chennai, Tamil Nadu","bio":"Pediatrician dedicated to child healthcare." },
+  { "name":"Dr. Vikram Rao","specialty":"Gastroenterology","experience":11,"rating":4.5,"profileImage":"/images/doctor6.jpg","availableSlots":["08:00","09:30","11:00","13:00","15:00","16:30"],"consultationFee":160,"location":"Hyderabad, Telangana","bio":"Gastroenterologist specialising in digestive disorders." },
+  { "name":"Dr. Anita Gupta","specialty":"Gynecology","experience":13,"rating":4.8,"profileImage":"/images/doctor7.jpg","availableSlots":["09:00","10:30","12:30","14:30","16:00","17:30"],"consultationFee":140,"location":"Pune, Maharashtra","bio":"Gynecologist and obstetrician with expertise in prenatal care." },
+  { "name":"Dr. Suresh Reddy","specialty":"Ophthalmology","experience":9,"rating":4.7,"profileImage":"/images/doctor8.jpg","availableSlots":["08:30","10:00","11:30","13:30","15:00","16:30"],"consultationFee":130,"location":"Kolkata, West Bengal","bio":"Eye specialist with expertise in cataract surgery." }
+]
