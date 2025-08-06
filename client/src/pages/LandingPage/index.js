@@ -1,12 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import DoctorCard from '../../components/DoctorCard';
 import Loader from '../../components/Loader';
-import { Wrap, Title, Sub, Grid, Error } from './styles';
+import {
+  Wrap, Title, Sub, Grid, Error, SearchBar, SearchInput
+} from './styles';
 
 const LandingPage = () => {
   const [doctors, setDoctors] = useState([]);
   const [loading, setLoading] = useState(true);
   const [err, setErr] = useState('');
+  const [search, setSearch] = useState('');
 
   useEffect(() => {
     const load = async () => {
@@ -21,6 +24,11 @@ const LandingPage = () => {
     load();
   }, []);
 
+  const filtered = doctors.filter(d =>
+    d.name.toLowerCase().includes(search.toLowerCase()) ||
+    d.specialty.toLowerCase().includes(search.toLowerCase())
+  );
+
   if (loading) return <Loader message="Loading doctors..." />;
   if (err)     return <Wrap><Error>{err}</Error></Wrap>;
 
@@ -28,9 +36,19 @@ const LandingPage = () => {
     <Wrap>
       <Title>Find Your Healthcare Provider</Title>
       <Sub>Book appointments with qualified doctors</Sub>
-
+      <SearchBar>
+        <SearchInput
+          type="text"
+          placeholder="Search by doctor or specialty..."
+          value={search}
+          onChange={e => setSearch(e.target.value)}
+        />
+      </SearchBar>
       <Grid>
-        {doctors.map(d => <DoctorCard key={d.id} doctor={d} />)}
+        {filtered.length
+          ? filtered.map(d => <DoctorCard key={d.id} doctor={d} />)
+          : <Error>No doctors match your search.</Error>
+        }
       </Grid>
     </Wrap>
   );
